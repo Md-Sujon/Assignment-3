@@ -1,12 +1,21 @@
+  //https://github.com/Md-Sujon/Assignment-3
+
+
+  
   //Problem 1  kilometerToMeter
 
-function kilometerToMeter(kilometer){
-    var meter=1000;    // 1 kilometer =1000 meter.
+  function kilometerToMeter(kilometer){
+    if(kilometer>0){
+        var meter=1000;    // 1 kilometer =1000 meter.
     var result=meter*kilometer;
+    }
+    else{
+        console.log("distance cannot be negative")
+    }
     return result;
    }
    
-   var total=kilometerToMeter(11);
+   var total=kilometerToMeter(20);
    console.log(total);
 
 
@@ -16,14 +25,21 @@ function kilometerToMeter(kilometer){
 
    function budgetCalculator(clock,phone,laptop){
 
+    // if(Number.isInteger(clock / phone )){
+
     var clockPrice=50;
     var PhonePrice=100;
     var laptopPrice=500;
 
     var result=clockPrice*clock+PhonePrice*phone+laptopPrice*laptop;
+    
+    // else{
+    //        console.log("please input intiger quantity number");
+    // }
+
     return result;
 }
-var total=budgetCalculator(9,40,30);
+var total=budgetCalculator(95,40,30);
 console.log(total);
 
 
